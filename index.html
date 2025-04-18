@@ -42,6 +42,13 @@
         <div class="tab-content container">
             <div class="tab-pane active" id="main">
                 <div id="form" class="container">
+					<div class="row" style="text-align:center">
+                        <div class="span12">
+                            <fieldset>
+                            <input type="text" id="sheet-title" placeholder="Worksheet Title"/> <br />
+                            </fieldset>
+                        </div>
+                    </div>
                    <!--- <div class="row">-->
                         <div class="span4">
                             <h2 class="span4">Notes</h2>
@@ -132,16 +139,11 @@
                             </div>
                         </div>
                     <!--</div>-- /row -->
-                    <div class="row">
-                        <div class="span12">
-                            <fieldset>
-                            <input type="text" id="sheet-title" placeholder="Worksheet Title"/> <br />
-                            <button id="create" class="btn btn-primary large"><i class="fa fa-magic"></i> Create Worksheet</button>
-                            </fieldset>
-                        </div>
-                    </div>
                 </div> <!-- /#form -->
             </div><!-- /#main -->
+			<div style="text-align:center">
+				<button id="create" class="btn btn-primary large"><i class="fa fa-magic"></i> Create Worksheet</button>
+			</div>
         </div> <!-- /.tab-content container/-->
 
         <div id="error" class="modal hide fade">
