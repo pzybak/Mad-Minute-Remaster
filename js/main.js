@@ -335,9 +335,6 @@ var MadMinute = {
 		  	MadMinute.bugCount = data.data.length;
 		  		$("#bugs").html(MadMinute.bugCount);
 		  }, 
-		  error: function(data) {
-		  	alert("There was an error contacting the Github server.");
-		  }
 		});
 		$.ajax({
 		  url: "https://api.github.com/repos/smykes/Mad-Minute-Music/commits",
@@ -347,9 +344,6 @@ var MadMinute = {
 		  		$("#change-list").append('<li><span class="label label-success">' + moment(data.data[i].commit.author.date).format("MM/DD/YYYY") + '</span> - ' + data.data[i].commit.message + '</li>')
 		  	}
 		  }, 
-		  error: function(data) {
-		  	alert("There was an error contacting the Github server.");
-		  }
 		});
 	},
 	renderQuiz: function() {
@@ -369,10 +363,10 @@ var MadMinute = {
 			this.clef = clef;
 			this.key = key;
 		};
-		$("#notes").prepend("<div>Date:_<span style='text-decoration: underline'>" + moment().startOf('day').format("MM/DD/YYYY") + "</span>_</div>")
+		$("#notes").prepend("<div>Date:_____________</div>")
 		$("#notes").prepend("<div>Name:_____________</div>");
 		if ($("#sheet-title").val()) {
-			$("#notes").prepend("<div>Title: " + $("#sheet-title").val() + "</div>")
+			$("#notes").prepend('<div style="text-align:center;font-weight:bold;font-size:35px">' + $("#sheet-title").val() + "</div>")
 		}	
 
 		//$("#form").hide();
