@@ -363,6 +363,7 @@ var MadMinute = {
 			this.clef = clef;
 			this.key = key;
 		};
+		$("#notes").prepend('<div style="text-align:center;font-style:italic">' + $("#sheet-instructions").val() + "</div>")
 		$("#notes").prepend("<div>Date:_____________</div>")
 		$("#notes").prepend("<div>Name:_____________</div>");
 		if ($("#sheet-title").val()) {
