@@ -4,11 +4,15 @@ Mad-Minute-Remaster
 ## About
 Mad Minute Remaster is a fork of Mad Minute Music (https://github.com/smykes/Mad-Minute-Music) with some planned improvements and added features
 
+## New Features
+* UI and formatting improvements
+* Ability to add instructions or a subtitle for students at the top of the page
+
+
 ## Roadmap/Planned Features
 * Higher resolution images
-* Ability to add instructions for students at the top of the page
 * Ability to add multiple answer fields for each note (to allow students to write in positions/fingerings/accidentals/etc)
-* UI and formatting improvements
+
 
 ## Technical Stuff
 The following libraries are used in this project:
